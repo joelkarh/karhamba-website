@@ -15,6 +15,11 @@ body{
 }
 
 .navigation__list {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 9;
+    left: 0px;
     text-align: center;
     span {
         font-weight: 800;
@@ -34,7 +39,9 @@ body{
 .c-orange{
     color: $orangeColor;
 }
-
+.b-black{
+    background-color:$baseColor;
+}
 .b-white{
     background-color: $white;
 }
@@ -42,17 +49,37 @@ body{
     background-color: $orangeColor;
 }
 
-.navigation__closed{
-    width:50px;
-    height: 5px;
-    background-color:red;
+.navigation__open{
+    width:25px;
+    height: 2px;
+    background-color:$white;
+    display: block;
+    position: relative;
+}
+.navigation__open::after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: $white;
+    position: absolute;
+    top: 6px;
     right: 0;
-
+    cursor: pointer;
+}
+.navigation__open::before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: $white;
+    position: absolute;
+    top: -6px;
+    right: 0;
+    cursor: pointer;
 }
 
 .navigation__close{
     width: 30px;
-    height: 5px;;
+    height: 2px;;
     background-color: aqua;
     position: absolute;
     top: 7%;
@@ -73,10 +100,67 @@ body{
 .navigation__close::before{
     content: "";
     width: 35px;
-    height: 5px;;
+    height: 2px;;
     background-color:$white;
     position: absolute;
     top: 0%;
     transform: rotate(45deg);
     visibility:visible; 
+}
+
+header{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    .logo{
+        margin: auto;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+}
+.first_article {
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+
+    h2{
+        font-size: 2.25rem;
+        color:$orangeColor;
+    }
+    span{
+        font-weight: 600;
+    }
+    p{
+        color: $fontGrey;
+        font-weight: 400;
+    }
+}
+
+#pretitle {
+    font-size:1rem;
+}
+
+button, .button {
+    border-style: none;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 6px 40px;
+    background-color: $orangeColor;
+    border-radius: 63px;
+    font-weight: 700;
+    color:$white;
+}
+
+.no_button{
+    background: none;
+    color: white;
+    font-weight: 400;
+    text-decoration: underline;
+    padding-left: 25px;
+}
+.no_button,
+.button{
+    font-size:.875rem;
 }

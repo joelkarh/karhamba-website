@@ -4,7 +4,6 @@ const Navbar = () => {
     return ( 
     <> 
         <span className="navigation__open"></span>
-        <span className="navigation__closed"></span>
         <ul className='navigation__list'>
         <span className="navigation__close"></span>
             <li className='b-orange'>
@@ -12,7 +11,7 @@ const Navbar = () => {
                     <span className='uppercase c-white navigation__logo'>Karhamba</span>
                 </Link>
             </li>
-            <li>
+            <li className='b-black'>
                 <Link href="/">
                     <a className='uppercase c-white'>home</a>
                 </Link>
@@ -22,7 +21,7 @@ const Navbar = () => {
                     <a className='uppercase c-orange'>about</a>
                 </Link>
             </li>
-            <li >
+            <li className='b-black'>
                 <Link href="/">
                     <a className='uppercase c-white'>projects</a>
                 </Link>
