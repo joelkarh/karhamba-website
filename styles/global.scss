@@ -1,0 +1,47 @@
+
+/* Bootstrap import */
+// color
+$baseColor:#0C0B0B;
+$orangeColor:#FF7700;
+$white:#FFFFFF;
+$unactiveColor:#7D7B7B;
+$fontGrey:#CFCFCF;
+$blackColor:#3C3A3A;
+$globalFont:"Poppins",serif;
+$introFont:'Playfair Display', serif;
+
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Poppins', sans-serif; */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: $globalFont;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none ;
+}
+
+a:active,
+a:visited
+{
+    color: none !important;
+}
+
+
+
+
+
+
