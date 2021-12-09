@@ -4,6 +4,7 @@ const Navbar = () => {
     return ( 
     <> 
         <span className="navigation__open"></span>
+        <span className="navigation__closed"></span>
         <ul className='navigation__list'>
         <span className="navigation__close"></span>
             <li className='b-orange'>
