@@ -32,6 +32,28 @@ const Navbar = () => {
                 </Link>
             </li>
         </ul> 
+        <ul className='navigation__list-MD'>
+            <li>
+                <Link href='/'>
+                <a>Home</a>
+                </Link>
+            </li>
+            <li>
+                <Link href='/'>
+                <a>Home</a>
+                </Link>
+            </li>
+            <li>
+                <Link href='/'>
+                <a>Home</a>
+                </Link>
+            </li>
+            <li>
+                <Link href='/'>
+                <a>Home</a>
+                </Link>
+            </li>
+        </ul>
     </>
     )
 }

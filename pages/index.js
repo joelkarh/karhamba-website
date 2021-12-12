@@ -9,7 +9,7 @@ import Layout from '../components/Layout'
 export default function Home() {
     return (
         <Layout>
-            <div className="container">
+            <div className="container home-container">
                 <section className="row">
                     <article className="col-12 first_article">
                         <h1 id="pretitle">Development that makes you say...</h1>
@@ -26,8 +26,6 @@ export default function Home() {
                         {/* prismic image rendered */}
                         
                             <Image src='/home_image.png' layout='fill' objectFit='contain'className='home_image' alt='home_image'/>
-                        
-                        
                     </div>
                 </section>
             </div>
