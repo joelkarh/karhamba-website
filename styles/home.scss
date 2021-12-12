@@ -82,15 +82,15 @@ body{
     height: 2px;;
     background-color: aqua;
     position: absolute;
-    top: 7%;
+    top: 6%;
     right: 10%;
     visibility: hidden;
     cursor: pointer;
 }
 .navigation__close::after{
     content: "";
-    width: 35px;
-    height: 5px;;
+    width: 30px;
+    height: 2px;;
     background-color: $white;
     position: absolute;
     top: 0%;
@@ -99,7 +99,7 @@ body{
 }
 .navigation__close::before{
     content: "";
-    width: 35px;
+    width: 30px;
     height: 2px;;
     background-color:$white;
     position: absolute;
@@ -122,6 +122,7 @@ header{
     display: flex;
     row-gap: 10px;
     flex-direction: column;
+    padding: 0 25px;
 
     h2{
         font-size: 2.25rem;
@@ -146,16 +147,19 @@ button, .button {
 }
 
 .button {
-    padding: 6px 40px;
+    padding: 15px 40px;
     background-color: $orangeColor;
     border-radius: 63px;
     font-weight: 700;
-    color:$white;
+    a{
+        color: $white
+    }
+    ;
 }
 
 .no_button{
     background: none;
-    color: white;
+    color: $white;
     font-weight: 400;
     text-decoration: underline;
     padding-left: 25px;
@@ -163,4 +167,67 @@ button, .button {
 .no_button,
 .button{
     font-size:.875rem;
+}
+.home_imageBox{
+    max-width: 341.33px;
+    height:330.55px;
+    border: 1px solid;
+    margin: 58px auto 0 auto;
+    border-bottom: none;
+    border-image: linear-gradient( to bottom, $fontGrey,rgba(63, 66, 64, 0.829));
+    border-image-slice: 1;
+    position: relative;
+    
+}
+
+// media queries 
+
+@media (min-width: 768px){
+    .first_article{
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 460px;
+        #pretitle{
+            font-size: 2.25rem;
+            font-weight:700;
+        }
+        h2{
+            font-size: 3.125rem;
+            font-weight: 800;
+        }
+        h3{
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+        p{
+            font-size: 1rem;
+        }
+        .buttons{
+            margin: 10px auto 0 auto;
+            position: relative;
+            top: 14px
+        }
+    }
+    .home_imageBox{
+        min-width: 588.8px;
+        min-height: 500px;
+        position: relative;
+        margin: 0 auto;
+        top: -45px;
+        padding-top: 60px;
+    }
+    
+}
+
+ /* Medium Devices, Desktops */
+ @media only screen and (min-width : 992px) {
+     
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .home_imageBox{
+        top: 0px;
+    }
 }
