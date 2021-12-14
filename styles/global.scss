@@ -1,5 +1,15 @@
 
-/* Bootstrap import */
+// fonts
+// @font-face {
+//   font-family: 'Poppins-N';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-display: swap;
+//   src: local('Poppins'), url(/fonts/Poppins/Poppins-Regular.ttf) format('ttf');
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@600;700;800&display=swap');
+
 // color
 $baseColor:#0C0B0B;
 $orangeColor:#FF7700;
@@ -34,11 +44,8 @@ a {
     text-decoration: none ;
 }
 
-a:active,
-a:visited
-{
-    color: none !important;
-}
+
+
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.

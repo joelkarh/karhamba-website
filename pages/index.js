@@ -19,13 +19,12 @@ export default function Home() {
                         <p>I am a self-taught <span className='fullstack'>Full stack</span> developer who can build your project. I love new challenges and to learn new skills.</p>
                         <div className="buttons">
                         <button className="button uppercase"> <Link href='/'>projects</Link> </button> 
-                        <button className='no_button uppercase'>Let’s work together</button>
+                        <button className='no_button uppercase'> <Link href='/'>Let’s work together</Link></button>
                         </div>
                     </article>
                     <div className="home_imageBox">
                         {/* prismic image rendered */}
-                        
-                            <Image src='/home_image.png' layout='fill' objectFit='contain'className='home_image' alt='home_image'/>
+                    <Image src='/home_image.png' layout='fill' objectFit='cover'className='home_image' alt='home_image'/>
                     </div>
                 </section>
             </div>
